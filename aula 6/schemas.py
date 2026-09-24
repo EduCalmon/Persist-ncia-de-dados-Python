@@ -1,6 +1,6 @@
 # Schemas é responsável por validação dos dados
 
-from pydantic import BaseModel
+from pydantic import BaseModel # pydantic serve para validar os dados. Se chegar str ao invés de int, retorna erro
 
 class EstudanteBase(BaseModel): # Garantimos que o que vem no campo nome e idade é str e int
     nome: str
